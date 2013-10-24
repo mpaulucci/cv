@@ -1,88 +1,92 @@
 %______________________________________________________________________________________________________________________
 % @brief   
 \documentclass[margin,line]{resume}
-\usepackage[spanish]{babel}
+% \usepackage[spanish]{babel}
 \usepackage[utf8]{inputenc}
+\usepackage{hyperref}
 
+\hypersetup{%
+    pdfborder = {0 0 0}
+}
 
 %______________________________________________________________________________________________________________________
 \begin{document}
-\name{\Large Martín Cristian Paulucci Cornejo}
+\name{\Large Martin Paulucci Cornejo}
 \begin{resume}
 
     %__________________________________________________________________________________________________________________
     % Contact Information
     \section{\mysidestyle Contact\\Information}
 
-    Address: Castex 3330 8ºB, Capital Federal                            \hfill home: (011) 4806-9119         \vspace{0mm}\\\vspace{0mm}%
-    Birthdate: 22/02/1988                          \hfill mobile: (011) 15-6441-8456         \vspace{0mm}\\\vspace{0mm}%
-    Edad: 25 years      \hfill e-mail: martin.c.paulucci@gmail.com  \vspace{0mm}\\\vspace{-4.5mm}%
-
+    Address: Castex 3330 8ºB, Buenos Aires                            \hfill home: \texttt{+}5411 4806-9119         \vspace{0mm}\\\vspace{0mm}%
+    Birth date: February 22, 1988                          \hfill mobile: \texttt{+}5411 6441-8456         \vspace{0mm}\\\vspace{0mm}%
+    Age: 25      \hfill e-mail: \href{mailto:martin.c.paulucci@gmail.com}{martin.c.paulucci@gmail.com}  \vspace{0mm}\\\vspace{0mm}%
+    LinkedIn: \href{http://www.linkedin.com/in/martinpaulucci}{linkedin.com/in/martinpaulucci} \hfill GitHub: \href{https://github.com/sammla}{github.com/sammla} \vspace{0mm}\\\vspace{-4.5mm}%
     %__________________________________________________________________________________________________________________
     % Education
     \section{\mysidestyle Education}
 
-    \textbf{Universidad de Buenos Aires}, Buenos Aires, Argentina \vspace{2mm}\\\vspace{1mm}%
-    \textsl{Ingeniería en Informática} \hfill \textbf{ Marzo 2006 -- presente}\vspace{-3mm}\\\vspace{-1mm}%
+    \textbf{University of Buenos Aires}, Buenos Aires, Argentina \vspace{2mm}\\\vspace{1mm}%
+    \textsl{Computer Engineering} \hfill \textbf{ March 2006 -- Present}\vspace{-3mm}\\\vspace{-1mm}%
     \begin{list2}
-        \item Actualmente desarrollando el trabajo profesional de Ingeniería en Informática
-        \item Fecha estimada de graduación: 12/2013
+        \item Expected graduation date:  December 2013
     \end{list2}\vspace{-1.5mm}
 
-    \textbf{Colegio Goethe}, Buenos Aires, Argentina \vspace{2mm}\\\vspace{1mm}%
-    \textsl{Bachiller Bilingüe, orientación Científico Exacta} \hfill \textbf{ Marzo 2000 -- Diciembre 2005}\vspace{-3mm}\\\vspace{-1mm}%
+    \textbf{Goethe Schule}, Buenos Aires, Argentina \vspace{2mm}\\\vspace{1mm}%
+    \textsl{Science and Math} \hfill \textbf{ March 2000 -- December 2005}\vspace{-3mm}\\\vspace{-1mm}%
     \begin{list2}
-        \item \textit{Títulos y diplomas adicionales}: Deutsches Abitur (Bachiller oficial reconocido por el Estado Alemán), Sprachdiplom I \& II.
+        \item Deutsches Abitur (German high school degree)
+        \item \textit{Additional Diplomas}: Sprachdiplom I \& II.
     \end{list2}\vspace{-1.5mm}
 
     %__________________________________________________________________________________________________________________
     % Professional Experience
-    \section{\mysidestyle Experiencia\\Laboral}
+    \section{\mysidestyle Work\\Experience}
 
     \textbf{Willdom SA}, Buenos Aires, Argentina \vspace{2mm}\\\vspace{1mm}%
-    \textsl{Programador Web} \hfill \textbf{Julio 2012 -- Septiembre 2013}\vspace{1.5mm}\\\vspace{0mm}%
-    Desarrollo integral de Acekia.com, una herramienta de adminisitración de QA. Para la herramienta se utilizaron las siguientes tecnologías: AngularJS, node.js (Express), CoffeeScript, d3.js, MongoDB (mongoose), Twitter Bootstrap, Heroku, GitHub.  
+    \textsl{Web Developer (JavaScript)} \hfill \textbf{July 2012 -- September 2013}\vspace{1.5mm}\\\vspace{0mm}%
+    Main developer of Acekia.com, a test management tool. Build with: AngularJS, node.js (Express), CoffeeScript, d3.js, MongoDB (mongoose), Twitter Bootstrap, Heroku, GitHub.  
 
     \textbf{Freelance}, Buenos Aires, Argentina \vspace{2mm}\\\vspace{1mm}%
-    \textsl{Programador Python/Django} \hfill \textbf{Octubre 2011 -- Febrero 2012}\vspace{1.5mm}\\\vspace{0mm}%
-	Desarrollo de un sistema de gestión de obras, utilizando Python/Django, PostgreSQL, JQuery, Mercurial, nginx.
+    \textsl{Web Developer (Django)} \hfill \textbf{October 2011 -- February 2012}\vspace{1.5mm}\\\vspace{0mm}%
+	Development of a construction management application, using Python, Django, PostgreSQL, JQuery, Mercurial, nginx.
 
     \textbf{Intelligenx Inc}, Buenos Aires, Argentina \vspace{2mm}\\\vspace{1mm}%
-    \textsl{Programador Java EE} \hfill \textbf{Agosto 2010 -- Agosto 2011}\\
-	Participé como desarrollador en dos proyectos de search engines:
+    \textsl{Software Developer (Java)} \hfill \textbf{August 2010 -- August 2011}\\
+    Development of local search sites:
     \begin{list2}
         \item PaginasAmarillas.com \& GuiaMais.com: Java, Maven, SVN, Windows Servers, Discovery Engine, JUnit, XML.
         \item YaSabe.com: Java, PHP, MongoDB, SVN, Maven, Bash Scripting, Linux Servers. 
     \end{list2}\vspace{-1.5mm}	
 
-    \textbf{Facultad de Ingeniería (UBA)}, Buenos Aires, Argentina \vspace{2mm}\\\vspace{1mm}%
-    \textsl{Colaborador en la materia Algoritmos y Programación II} \hfill \textbf{Marzo 2010 -- Febrero 2011}\vspace{1.5mm}\\\vspace{0mm}%
-	Corrección de trabajos prácticos grupales e individuales, y exámenes. Dictado de clases prácticas. Seguimiento de grupos. Los temas fundamentales vistos en clase son varias estructuras de datos(desde listas hasta árboles y grafos) y una introducción a la programación orientada a objetos.
+    \textbf{University of Buenos Aires}, Buenos Aires, Argentina \vspace{2mm}\\\vspace{1mm}%
+    \textsl{Teaching Assistant} \hfill \textbf{March 2010 -- February 2011}\vspace{1.5mm}\\\vspace{0mm}%
+    Teaching assistant at ``Algorithms and Programming II'' course. Correction of exams. Group monitoring. Some topics covered were: data structures(lists, trees, graphs) and OOP.
 
     \textbf{Xinergia}, Buenos Aires, Argentina \vspace{2mm}\\\vspace{1mm}%
-    \textsl{Programador Web} \hfill \textbf{Marzo 2009 -- Septiembre 2009}\\
-	Programación de aplicaciónes web en PHP, HTML y Javascript. Uso de Linux, Subversion, MySQL, Eclipse.
+    \textsl{Web Developer} \hfill \textbf{March 2009 -- September 2009}\\
+	Development of Web Applications. PHP, HTML y JavaScript, Linux, Subversion, MySQL, Eclipse.
     %__________________________________________________________________________________________________________________
     % Computer Skills
-    \section{\mysidestyle Idiomas} 
+    \section{\mysidestyle Languages} 
 
-	\textbf{Español}: Idioma nativo	 \\
-	\textbf{Alemán}: Idioma nativo   \\
-	\textbf{Inglés}: Nivel avanzado \\
+	\textbf{Spanish}: Native \\
+	\textbf{German}: Native   \\
+	\textbf{English}: Advanced \\
 
 
-    \newpage
+    % \newpage
     %__________________________________________________________________________________________________________________
     % Computer Skills
-    \section{\mysidestyle Conocimientos Técnicos} 
+    \section{\mysidestyle Computer Skills} 
 
-	\textbf{Lenguajes de programación}: Bash, C, C++, CoffeeScript, Java, Javascript, Perl, PHP, Python.
+	\textbf{Programming}: Bash, C, C++, CoffeeScript, Java, JavaScript, Perl, PHP, Python.
 
-	\textbf{Metodologías}: Extremme Programming, SCRUM, Design Patterns, Refactoring, UML.
+	\textbf{Methodologies}: SCRUM, XP, Design Patterns, Refactoring, UML.
 
-	\textbf{Frameworks}: AngularJS, Express, Django, Twitter Bootstrap, Jquery, mocha,  JUnit, PyUnit.
+	\textbf{Frameworks}: AngularJS, Express, Django, Twitter Bootstrap, JQuery, mocha,  JUnit, PyUnit.
 
-	\textbf{Herramientas}: Linux (archlinux y Ubuntu), Windows, Git, SVN, Mercurial, \LaTeX , MongoDB, MySQL, Sublime Text, Eclipse.
+	\textbf{Miscellaneous}: Linux (archlinux and Ubuntu), Windows, Git, SVN, Mercurial, \LaTeX , MongoDB, MySQL, PostgreSQL, Sublime Text, Eclipse.
 
 %______________________________________________________________________________________________________________________
 \end{resume}
