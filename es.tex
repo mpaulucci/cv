@@ -1,0 +1,110 @@
+% Curriculum de Ejemplo
+
+\documentclass[11pt, a4paper]{moderncv}
+
+%Estilo del paquete moderncv, otra opcion es classic
+% \moderncvtheme[green]{casual}
+\moderncvtheme[blue]{casual}
+
+%Codificacion
+\usepackage[utf8]{inputenc}
+
+%Ajuste de margenes de pagina
+\usepackage[scale=0.8]{geometry}
+
+\AtBeginDocument{\recomputelengths}
+
+%Datos personales
+\firstname{Martín}
+\familyname{Paulucci Cornejo}
+\title{Currículum Vit\ae}
+% \datebirth
+% \address{Castex 3330 8°B}{Buenos Aires}
+%\phone{541120708171}
+\email{martin.c.paulucci@gmail.com}
+%\extrainfo{www.ejemplo.net}
+% \photo[64pt]{perfil.jpg}
+
+%---------------------
+% Contenido
+%---------------------
+
+\begin{document}
+\maketitle
+
+% \section{Perfil}
+% \cvitem{}{Soy un estudiante de Informática particularmente interesado en la Teoría del lenguaje y la Ingeniería de Software. Considero entre mis virtudes
+% la facilidad de aprendizaje y la capacidad de resolución de problemas. Desarrollé varias aplicaciones web en forma freelance, siempre a cargo de todos los
+% aspectos técnicos del desarrollo, desde el frontend hasta la configuración de servidores.}
+
+\section{Datos Personales}
+
+\cvlistitem{\textbf{Fecha de Nacimiento:} 22 febrero 1988}
+\cvlistitem{\textbf{Teléfono:} +54 11 64418456}
+\cvlistitem{\textbf{Correo electrónico:} martin.c.paulucci@gmail.com}
+\cvlistitem{\textbf{Perfil linkedIn:} \url{ar.linkedin.com/in/martinpaulucci} }
+\cvlistitem{\textbf{Perfil github:} \url{github.com/sammla} }
+\cvlistitem{\textbf{Blog técnico:} \url{medium.com/@sammla_} }
+% \cvlistitem{\textbf{Web:} \weblink{www.ejemplo.net}}
+
+
+\section{Formación Académica}
+% \cventry{Fecha}{Cargo}{Empresa}{Descripcion}{}{}
+
+\cventry{2006 - 2013}{Ingeniería en Informática}{Universidad de Buenos Aires}{}{}{}
+\cvlistitem{ \textit{Título obtenido}: Ingeniero en Informática}
+\cventry{2000 - 2005}{Bachiller Bilingüe, orientación Científico Exacta} {Colegio Goethe}{}{}{}
+\cvlistitem{ \textit{Títulos y diplomas adicionales}: Deutsches Abitur (Bachiller oficial alemán), Sprachdiplom I \& II.}
+
+\section{Experiencia Profesional}
+\cventry{Julio 2012 - Septiembre 2013}{Web Developer}{Willdom SA}{}{}{Desarrollo integral de Acekia.com, una herramienta de adminisitración de QA. Para la herramienta se utilizaron las siguientes tecnologías: AngularJS, node.js (Express), CoffeeScript, d3.js, MongoDB (mongoose), Twitter Bootstrap, Heroku, GitHub.}
+
+\cventry{Octubre 2011 - Febrero 2012}{Web Developer}{Freelance}{}{}{Desarrollo de un sistema de gestión de obras, utilizando Python/Django, PostgreSQL, JQuery, Mercurial, nginx.}
+
+\cventry{Agosto 2010 - Agosto 2011}{Software Developer}{Intelligenx Inc}{}{}{Participé como desarrollador en dos proyectos de search engines:
+\begin{itemize}\setlength\itemindent{6pt}
+\item PaginasAmarillas.com \& GuiaMais.com: Java, Maven, SVN, Windows Servers, Discovery Engine, JUnit, XML.
+\item YaSabe.com: Java, PHP, MongoDB, SVN, Maven, Bash Scripting, Linux Servers.
+\end{itemize}
+}
+
+\cventry{Marzo 2009 - Septiembre 2009}{Web Developer}{Xinergia}{}{}{Programación de aplicaciónes web en PHP, HTML y Javascript. Uso de Linux, Subversion, MySQL, Eclipse.}
+
+\section{Docencia}
+\cventry{Mayo 2010 - Diciembre 2010}{Colaborador Algoritmos y Programación II}{Universidad de Buenos Aires}{}{}{Corrección de trabajos prácticos grupales e individuales, y exámenes. Dictado de clases prácticas. Seguimiento de grupos. Los temas fundamentales vistos en clase son varias estructuras de datos(desde listas hasta árboles y grafos) y una introducción a la programación orientada a objetos.}
+
+\closesection{}
+%Salto de pagina
+\pagebreak{}
+
+\section{Otros Trabajos}
+
+\cventry{Junio 2013 - Actualidad}{Invisible.js}{}{}{\url{github.com/invisiblejs/invisible}}{Framework web isomorfo que permite definir modelos una vez y utilizarlos indistintamente en servidor y cliente. Integración con node.js, mongoDB, socket.io.}
+
+\cventry{Julio 2012}{Django Bootstrap Starter}{}{}{\url{github.com/sammla/django-bootstrap-starter}}{Seed que integra Django, Bootstrap, Django Crispy Forms y otras librerías.}
+
+\cventry{Junio 2011}{pygo1963}{}{}{\url{code.google.com/p/pygo1963}}{Cliente de Atari Go desarrollado en Python. Engine con Alpha Beta pruning, protocolo de comunicaciones con subprocesos y sockets, GUI con PyGame.}
+
+\cventry{Octubre 2009}{Toolkit de persistencia de datos}{}{}{\url{code.google.com/p/orgadatos/}}{API C++ para persistir objetos y organizarlos en disco. Indexación mediante árbol B+, Hashing dinámico. Compresión de archivos.}
+
+
+\section{Idiomas}
+%cvlanguage necesitan 3 llaves, cuestiones de formateo del curriculum
+\cvlanguage{Español}{Nativo}{}
+\cvlanguage{Alemán}{Nativo}{}
+\cvlanguage{Inglés}{Avanzado}{}
+
+
+\section{Conocimientos técnicos}
+
+\cvitem{Programación}{Bash (intermedio), C (básico), C++ (intermedio), CoffeeScript (avanzado), HTML/CSS (intermedio), Java (intermedio), Javascript (avanzado), PHP (intermedio), Python (avanzado).}
+
+\cvitem{Metodologías}{Análisis y diseño OO, Extreme programming, SCRUM, Refactoring, Design Patterns, UML. }
+
+\cvitem{Programación}{Programación funcional, Socket programming, TCP/IP, Programación web en tiempo real.}
+
+\cvitem{Frameworks y Librerías}{AngularJS, Express, Django, Twitter Bootstrap, Jquery, mocha,  JUnit, virtualenv, Maven, PyUnit.}
+
+\cvitem{Herramientas}{Linux (archlinux y Ubuntu), Windows, Git, SVN, Mercurial, \LaTeX , MongoDB, MySQL, Sublime Text, Eclipse.}
+
+\end{document}

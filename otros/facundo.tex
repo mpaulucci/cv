@@ -1,0 +1,114 @@
+% Curriculum de Ejemplo
+
+\documentclass[11pt, a4paper]{moderncv}
+
+%Estilo del paquete moderncv, otra opcion es classic
+\moderncvtheme{casual}
+
+%Codificacion
+\usepackage[utf8]{inputenc}
+
+%Ajuste de margenes de pagina
+\usepackage[scale=0.8]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}} Solo para el tema clasico
+
+\AtBeginDocument{\recomputelengths}
+
+%Datos personales
+\firstname{Facundo}
+\familyname{Olano}
+%\title{Currículum Vit\ae}
+%\datebirth
+%\address{Alsina 248}{Ciudadela}
+%\phone{541120708171}
+\email{facundo.olano@gmail.com}
+%\extrainfo{www.ejemplo.net}
+%\photo[64pt]{picture_file}
+
+%---------------------
+% Contenido
+%---------------------
+
+\begin{document}
+\maketitle
+
+\section{Perfil} 
+\cvitem{}{Soy un estudiante de Informática particularmente interesado en la Teoría del lenguaje y la Ingeniería de Software. Considero entre mis virtudes
+la facilidad de aprendizaje y la capacidad de resolución de problemas. Desarrollé varias aplicaciones web en forma freelance, siempre a cargo de todos los 
+aspectos técnicos del desarrollo, desde el frontend hasta la configuración de servidores.}
+
+\section{Datos Personales}
+
+\cvlistitem{\textbf{Fecha de Nacimiento:} 18 junio 1987}
+\cvlistitem{\textbf{Teléfono:} 541120708171}
+\cvlistitem{\textbf{Correo electrónico:} facundo.olano@gmail.com}
+\cvlistitem{\textbf{Perfil LinkedIn:} ar.linkedin.com/pub/facundo-olano/46/439/7a2}
+\cvlistitem{\textbf{Perfil github:} github.com/facundoolano}
+\cvlistitem{\textbf{Blog técnico:} facundoolano.wordpress.com}
+%\cvlistitem{\textbf{Web:} \weblink{www.ejemplo.net}}
+
+
+\section{Formación académica}
+%En los cventry debe haber 6 llaves, aunque no tengamos mas que introducir
+%y esten vacias
+\cventry{2005 - Actualidad}{Ingeniería en Informática}{Universidad de Buenos Aires}{cursando sexto año, 39 materias aprobadas, promedio 7.8}{}{}
+\cventry{2002 - 2004}{EGB Comunicación} {Colegio Inmaculada Concepción de Ciudadela}{}{}{}
+
+\section{Experiencia Profesional}
+%\section{Experiencia becada}
+%\section{Experiencia Freelance}
+\cventry{Marzo 2013 - Actualidad}{Python Developer}{Freelance}{Desarrollo de una red social laboral. Uso de Django y haystack.}{}{}
+\cventry{Agosto 2012 - Octubre 2012}{Python Developer}{DigBang}{Proyecto de gestión online de contratos. Uso de Django, postgresql, South}{}{}
+\cventry{Febrero 2012 - Marzo 2012}{Server Configuration/Django Developer}{Freelance}{Migración de servidor web (CentOS a Ubuntu). Aplicación django para búsquedas sobre el App Store, usando el EPF de Apple (tablas de 60 millones de registros). Caching, optimización de base de datos y querys}{}{}
+\cventry{Septiembre 2011 - Marzo 2012}{Python Developer}{Freelance}{Aplicación de Facebook de subastas inversas. Backend en django, actualización en tiempo real usando Orbited/MorbidMQ/Stomp. Integración con Facebook credits y paypal. Tareas asincrónicas con Celery y RabbitMQ}{}{}
+\cventry{Julio 2011 - Septiembre 2011}{Python Developer}{Freelance}{Proyecto de gestión de obras de arquitectura e ingeniería. Uso de Django, nginx, gunicorn, JQuery, Google Maps. Migración de base de datos csv a postgresql}{}{}
+\cventry{Marzo 2011 - Agosto 2011}{Python Developer}{Freelance}{Controlador web para FreeSwitch, manejo en tiempo real de cabinas telefónicas. Uso de Python, Django, Twisted. Internacionalización. Manejo de visores lcd a través de usb; modificación de sus controladores en C; extensión a Python usando SWIG. Deploy de la aplicación en un servidor SheevaPlug}{}{}
+\cventry{Julio 2010 - Febrero 2011}{Python Developer}{Freelance}{Aplicación web con Pyhton. uso de Django, MySQL/PostgresSQL, Apache, mod\_python, wsgi, JQuery, Google Charts}{}{}
+\cventry{Diciembre 2007 - Agosto 2008}{Java Developer}{Globant}{Desarrollo de aplicaciones enterprise con Java; uso de Hibernate, Spring, Spring MVC/Struts, 
+MySQL/PostgresSQL, Trails, Maven, JUnit}{}{}
+\cventry{Febrero 2007 - Diciembre 2007}{Quality Control Analyst}{Globant}{Testing de aplicaciones web, desktop y móviles; diseño de casos de pruebas;
+load testing con JMeter}{}{}
+
+\section{Docencia}
+\cventry{Mayo 2010 - Diciembre 2010}{Colaborador Algoritmos y Programación I}{Universidad de Buenos Aires}{Programación estructurada en Pascal, Python y C}{}{}
+
+\section{Otros Trabajos}
+\cventry{Noviembre 2012 - Actualidad}{pescado.js}{}{Trabajo de investigación y desarrollo sobre la viabilidad de unificar el desarrollo del cliente y el servidor en aplicaciones web, usando node.js, angular.js y socket.io}{}{}
+\cventry{Septiembre 2011 - Marzo 2012}{Aleph UBA}{}{Repositorio online de libros y documentos académicos. Desarrollado con Python/Django}{www.alephuba.com.ar, github.com/facundoolano/alephuba}{}
+\cventry{Junio 2011}{SF Tester}{}{Sitio de generación automática de unit tests para clases SalesForce.com. Desarrollado con Python/Django sobre Google App Engine}{sftester.chacholano.com.ar
+}{}
+\cventry{Junio 2011}{pygo1963}{}{Cliente de Atari Go desarrollado en Python. Engine con Alpha Beta pruning, protocolo de comunicaciones con subprocesos y sockets, GUI con PyGame}{code.google.com/p/pygo1963/}{}
+\cventry{Octubre 2009}{Toolkit de persistencia de datos}{}{API C++ para persistir objetos y organizarlos en disco. Indexación mediante árbol B+, Hashing dinámico. Compresión de archivos}{code.google.com/p/orgadatos/}{}
+\cventry{Mayo 2009}{El Lenguaje de Programación Erlang}{}{Trabajo de investigación sobre el lenguaje de programación concurrente Erlang}{}{}
+\cventry{Junio 2008}{Getter and setter tester}{}{Framework para la automatización del unit testing de getters y setters en Java}{sourceforge.net/projects/getterandsetter/}{}
+
+\closesection{}
+%Salto de pagina
+
+
+\section{Idiomas}
+%cvlanguage necesitan 3 llaves, cuestiones de formateo del curriculum
+\cvlanguage{Castellano}{Nativo}{}
+\cvlanguage{Inglés}{Avanzado}{}
+\cvlanguage{Francés}{Intermedio}{}
+\cvlanguage{Portugués}{Básico}{}
+\cvlanguage{Italiano}{Básico}{}
+
+
+\closesection{}
+%Salto de pagina
+\pagebreak{}
+
+\section{Conocimientos técnicos}
+
+%Los comandos cvcomputer necesitan 4 llaves
+%\cvcomputer{Frameworks}{}{}{}
+\cvitem{Metodologías}{Análisis y diseño OO, Extreme programming, SCRUM, Refactoring, Design Patterns, Programación funcional, Computación Gráfica, Organización de Datos, Socket programming, TCP/IP, Programación web en tiempo real, Optimización de bases de datos}
+\cvitem{Programación}{Python (avanzado), Java (avanzado), Erlang (básico), C++ (avanzado), C (básico), bash (básico), Perl (básico), HTML/CSS (intermedio), JavaScript (avanzado), PHP (básico), Ruby (básico)}
+\cvitem{Frameworks}{Django, South, Haystack, Facebook Graph API, Facebook Credits API, JQuery, virtualenv, gunicorn, Celery, djangoappengine, Spring, Struts, Hibernate, Maven, Java Reflection, xUnit, OpenGL, SDL}
+\cvitem{Tools}{nginx, Google App Engine, Git, SVN, Mercurial, \LaTeX{}, MySQL, PostgreSQL Eclipse, Unix/Linux}
+
+%\section{Intereses}
+%\section{Más información}
+\end{document}

@@ -1,0 +1,180 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.1 (9/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Gonzalo} % Your first name
+\familyname{Sosa Rolon} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vitae}
+% \address{123 Broadway}{City, State 12345}
+% \mobile{(000) 111 1111}
+% \phone{(000) 111 1112}
+% \fax{(000) 111 1113}
+% \email{gonzalo.sosa.rolon@gmail.com}
+% \homepage{staff.org.edu/~jsmith}{staff.org.edu/$\sim$jsmith} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+% \extrainfo{additional information}
+\photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+% \quote{"A witty and playful quotation" - John Smith}
+
+%----------------------------------------------------------------------------------------
+
+\usepackage{paralist}
+
+\newenvironment{innerlist}[1][\enskip\textbullet]%
+        {\begin{compactitem}[#1]}{\end{compactitem}}
+        
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Datos}
+	\textbf{Residencia:}Buenos Aires, Capital Federal \ \ \ \ \textbf{Nacionalidad:} Argentina\\
+	\textbf{Nombre:} Gonzalo J. Sosa Rolon \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textbf{Cel:} (11)15-6055-2111\\
+	\textbf{Dir:} Pi y Margall 1050, 1º C \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \  \ \textbf{Nacimiento:} 21 de noviembre 1986 (26 años)\\
+	\textbf{Estado:} Soltero \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \  \textbf{Mail:} gonzalo.sosa.rolon@gmail.com\\
+	\textbf{DNI:} 32729011\\	
+
+\section{Objetivo}
+
+Desarrollar mis conocimientos informáticos y mi perfil laboral, ampliar mi experiencia en el ámbito, tener la oportunidad de aplicar mis conocimientos en un ambiente de trabajo dinámico y con mucha relación interpersonal.
+
+\section{Educación}
+\cventry{2006-Presente}{Universitario}{Ingeniería en informática}{UBA}{Buenos Aires}{último año de la carrera}
+\cventry{1999-2004}{Secundario}{Bachillerato Pedagógico}{Escuela Normal Sarmiento}{Resistencia, Chaco}{Estudios completos}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experiencia laboral}
+
+\cventry{Abril 2012 – Mayo 2013}{Prymno SRL - Universidad Católica}{\textsc{Programador Java EE}}{Java EE (Mojito, Spring, Hibernate), MySQL}{ }{Desarrollo de sistema web ERP.}
+
+\cventry{Junio 2011 – Marzo 2012}{Hewlett Packard}{\textsc{Srv. Information Developer III}}{Java EE (Spring, Ibatis, Struts), C++, perl, PL/SQL, Python (Scriptting), BSCS, ATS, Mibas}{}{Encargado del mantenimiento de aplicaciones perifericas al sistema de Billing y Rating de la empresa, configuración del motor pospago (BSCS) y prepago (ATS), analisis y solución a errores de configuración o de datos.}
+
+\cventry{Octubre 2010 – Abril 2011}{Intelligenx}{\textsc{Programador Java EE}}{Java EE, MongoDB, php, Lucene, Discovery Engine}{}{Encargado del desarrollo del backend del sitio yasabe.com, definiendo y corrigiendo los search flows del sistema.}
+
+\cventry{Agosto 2007 – Agosto 2011}{Facultad de Ingeniería, UBA}{\textsc{Ayudante de cátedra de algoritmos y programación I}}{Python, Pascal}{}{Corrección de programas desarrollados por alumnos en forma individual y grupal,clases practicas y teóricas de programación estructurada.}
+
+\cventry{Diciembre 2008 – Agosto 2010}{Quala Consulting}{\textsc{Analista/Programador}}{HTML/CSS, JavaScript, Java, Apex, SQL.}{}{Analisis de sistemas, Desarrollo de aplicaciones web 2.0, Desarrollo de programas con la plataforma Force,Desarrollo de aplicaciones Mobile/de escritorio que interactuan con el servidor de salesforce.}
+
+\cventry{Junio 2007 – Septiembre 2008}{Consultora JSR ingeniería }{\textsc{Responsable del área informática}}{HTML/CSS, JavaScript, Java}{}{Instalacion/administracion del hardware y el software. Desarrollador junior de programas de utilidad para la empresa. Desarrollo y diseño del sitio web de la empresa.(www.jsringenieria.com.ar).}
+%------------------------------------------------
+
+\section{Desarrollos personales}
+
+\cventry{ }{AutoTester Salesforce}{}{ Python, Google App Engine, Salesforce WebService}{}{Framework para testear automáticamente clases de salesforce. El programa reconoce todos los métodos de una clase, crea una instancia de test y llama en forma ordenada a todos los métodos.}
+
+\cventry{ }{Framework de colisiones}{}{ C++}{}{Framework para calcular colisiones de figuras geométricas definidas matemáticamente sin utilizar discretizaciones por Sprites, permite al usuario tener una precisión de colision calculo flotante.}
+
+\cventry{ }{Go Game}{}{ Python, Psico (mejora en performance), GNUGO, PyGame}{}{Implementación del juego de mesa Go con el protocolo GNUGO, con profundidad de calculo de 7 niveles.}
+
+\cventry{ }{Cliente Torrent}{}{ C++}{}{Implementación de cliente torrent realizado como trabajo especial en la universidad.}
+
+\cventry{ }{GlobalComics}{}{ dJango, sol-r }{}{Implementación de página dedicada a la venta directa, subastas y trueques de comics y productos anime.}
+
+\cventry{ }{Freelance}{}{ java, C++, Cocos2D}{}{Implementación de juegos 2D para celulares android.}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Lenguajes}
+
+\cvitem{Español}{Idioma nativo}
+\cvitem{Ingles}{Intermedio avanzado oral y escrito}
+\cvitem{Portugues}{Basico}
+
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Capacidades y Aptitudes Técnicas}
+	\begin{innerlist}
+        \item Desarrollador de programas con conocimientos en programación orientada a objetos y programación estructurada
+        \item Lenguajes: Pascal, C/C++, java, python, perl, bash, javascript, html, php, pl/sql, \LaTeX.
+        \item Conocimientos y competencias en: 
+			  Herencia y polimorfismo, Composición/Agregación, Interfaces, Manejo de excepciones, colecciones, estructura de datos, Patrones de diseño, buenas practicas de programación, 		   			  documentación interna, documentación externa (Diagramas UML), Extreme Programming, Scrum.
+        \item Programación de Sockets, implementacion de programas Cliente-Servidor, WSDL.
+        \item Programación concurrente: multiprocesos, multithreading, memoria compartida, semaforos, mutexs, fifos y mensajes.
+        \item Protocolo TCP/IP.
+        \item Uso de sistemas Linux avanzado
+        	\begin{innerlist}
+		        \item Distribuciones: \emph{Ubuntu, ArchLinux}
+		        \item Programas de Entorno: \emph{eclipse, netbeans}
+		        \item Programas de Sistema: \emph{grep/egrep, sed, awk}
+    		    \item Programas de Texto: \emph{Geany, Vim}
+	        \end{innerlist}	
+	    \item Otros sistemas operativos    
+	    \begin{innerlist}
+		        \item Windows 98
+		        \item Windows 2000
+		        \item Windows xp
+    		    \item Windows 7
+    		    \item DOS
+	   \end{innerlist}	
+       \item Protocolos Implementados: HTTP 1.1, BitTorrent, GNUGO.
+       \item Otras herramientas
+       \begin{innerlist}
+		        \item Firebug
+		        \item Texmaker
+		        \item Paquete Office
+    		    \item Ghex
+	   \end{innerlist}	
+    \end{innerlist}  
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
