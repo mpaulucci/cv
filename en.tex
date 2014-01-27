@@ -1,0 +1,99 @@
+% Curriculum de Ejemplo
+
+\documentclass[11pt, a4paper]{moderncv}
+
+%Estilo del paquete moderncv, otra opcion es classic
+% \moderncvtheme[green]{casual}
+\moderncvtheme[blue]{casual}
+
+%Codificacion
+\usepackage[utf8]{inputenc}
+
+%Ajuste de margenes de pagina
+\usepackage[scale=0.8]{geometry}
+
+\AtBeginDocument{\recomputelengths}
+
+%Datos personales
+\firstname{Martín}
+\familyname{Paulucci Cornejo}
+\title{Currículum Vit\ae}
+\email{martin.c.paulucci@gmail.com}
+% \photo[64pt]{perfil.jpg}
+
+%---------------------
+% Contenido
+%---------------------
+
+\begin{document}
+\maketitle
+
+\section{Contact Information}
+
+\cvlistitem{\textbf{Birth Date:} february 22, 1988}
+\cvlistitem{\textbf{Phone:} \texttt{+}54 11 64418456}
+\cvlistitem{\textbf{E-mail:} \href{mailto:martin.c.paulucci@gmail.com}{martin.c.paulucci@gmail.com}}
+\cvlistitem{\textbf{Skype:} martinpaulucci}
+\cvlistitem{\textbf{LinkedIn:} \url{ar.linkedin.com/in/martinpaulucci} }
+\cvlistitem{\textbf{GitHub:} \url{github.com/sammla} }
+\cvlistitem{\textbf{Technical Blog:} \url{medium.com/@sammla_} }
+
+\section{Education}
+% \cventry{Fecha}{Cargo}{Empresa}{Descripcion}{}{}
+
+\cventry{2006 - 2013}{Computer Engineer}{Buenos Aires University}{Buenos Aires}{Argentina}{}
+% \cvlistitem{ \textit{Título obtenido}: Ingeniero en Informática}
+\cventry{2000 - 2005}{Science and Math} {Goethe Schule}{Buenos Aires}{Argentina}{}
+\cvlistitem{Deutsches Abitur (German high school degree).}
+\cvlistitem{Sprachdiplom I \& II.}
+
+\section{Work Experience}
+\cventry{July 2012 - September 2013}{Web Developer}{Willdom SA}{}{}{ Main developer of Acekia.com, a test management tool. Build with: AngularJS, node.js (Express), CoffeeScript, d3.js, MongoDB (mongoose), Twitter Bootstrap, Heroku, GitHub.}
+
+\cventry{October 2011 - February 2012}{Web Developer}{Freelance}{}{}{Development of a construction management application, using Python, Django, PostgreSQL, JQuery, Mercurial, nginx.}
+
+\cventry{August 2010 - August 2011}{Software Developer}{Intelligenx Inc}{}{}{Development of local search sites:
+\begin{itemize}\setlength\itemindent{6pt}
+\item PaginasAmarillas.com \& GuiaMais.com: Java, Maven, SVN, Windows Servers, Discovery Engine, JUnit, XML.
+\item YaSabe.com: Java, PHP, MongoDB, SVN, Maven, Bash Scripting, Linux Servers.
+\end{itemize}
+}
+
+\cventry{March 2009 - September 2009}{Web Developer}{Xinergia}{}{}{Development of Web Applications. PHP, HTML y JavaScript, Linux, Subversion, MySQL, Eclipse.}
+
+\section{Teaching}
+\cventry{May 2010 - December 2010}{Teaching assistant}{Buenos Aires University}{}{}{Teaching assistant at ``Algorithms and Programming II'' course. Correction of exams. Group monitoring. Some topics covered were: data structures(lists, trees, graphs) and OOP.}
+
+\closesection{}
+%Salto de pagina
+\pagebreak{}
+
+\section{Other Works}
+
+\cventry{June 2013 - Present}{Invisible.js}{}{}{\url{github.com/invisiblejs/invisible}}{Isomorfic Web Framework written in JavaScript. It lets the programmer define domain models once and use them indistinguishable on the server (nodejs) or client (web browser). Its build on top of Express framework, and has mongoDB and socket.io integration.}
+
+\cventry{July 2012}{Django Bootstrap Starter}{}{}{\url{github.com/sammla/django-bootstrap-starter}}{Seed for a Django application that uses Twitter Bootstrap and other popular libraries.}
+
+\cventry{June 2011}{pygo1963}{}{}{\url{code.google.com/p/pygo1963}}{Atari Go client developed with Python. Engine with Alpha Beta pruning, communication protocol with subprocesses and sockets, GUI build with PyGame.}
+
+
+\section{Languages}
+%cvlanguage necesitan 3 llaves, cuestiones de formateo del curriculum
+\cvlanguage{Spanish}{Native}{}
+\cvlanguage{German}{Advanced}{}
+\cvlanguage{English}{Advanced}{}
+
+
+\section{Technical Skills}
+
+\cvitem{Programming}{Bash, C, C++, CoffeeScript, HTML/CSS, Java, Javascript, PHP, Python.}
+
+\cvitem{Methodologies}{Análisis y diseño OO, Extreme programming, SCRUM, Refactoring, Design Patterns, UML. }
+
+\cvitem{Web Technologies}{AngularJS, Express, Django, Twitter Bootstrap, grunt, jquery, mocha, mongoose, passportJS, socket.io, grunt, bower, less, heroku, apache, nginx.}
+
+\cvitem{Databases}{MongoDB, MySQL, PostgreSQL.}
+
+\cvitem{Tools}{archlinux, Ubuntu, Windows, Git, SVN, Mercurial, \LaTeX , Sublime Text, Eclipse}
+
+\end{document}
